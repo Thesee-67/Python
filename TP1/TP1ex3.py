@@ -1,0 +1,5 @@
+jour = int(input("quelle jour est-il?"))
+heure = int(input("Qu'elle heur est-il"))
+minutes = int(input("Combien de Minutes se sont écoulé depuis le début de l'heure"))
+minmois = ((60*heure)+(jour*(24*60))+minutes)
+print("Depuis le debut du mois il y a eu {:.0f}".format(minmois), "minutes d'écoulé")
