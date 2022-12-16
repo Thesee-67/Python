@@ -11,7 +11,7 @@ else :
     if nombre % 2 ==0:
         print("le nombre est négatif et paire")
     else:
-        print("le nombre est Positif et impaire.")
+        print("le nombre est négatif et impaire.")
 
 
 
