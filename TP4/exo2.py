@@ -13,7 +13,7 @@ i = 0
 
 for i in range(nombreEtudiants) :
     i = i +1
-    note_test = int(input(F"La note de l'étudiant est {i} : "))
+    note_test = float(input(F"La note de l'étudiant est {i} : "))
     notes.append(note_test)
 
 print("la moyenne est de :", cal_average(notes))
@@ -21,5 +21,5 @@ print("\n")
 print ("Num de l'étudiant | note | ecart")
 
 for i in range(nombreEtudiants) :
-    print(F'{i} | {notes[i]} | {cal_average(notes) - notes[i]}')
+    print(F'{i} | {notes[i]} | {round(cal_average(notes) - notes[i], 2)}')
     i = i +1
