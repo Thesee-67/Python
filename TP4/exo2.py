@@ -1,25 +1,38 @@
-def cal_average(num):
-    sun_num = 0
-    for t in num:
-        sun_num = sun_num + t
-    
-    avg = sun_num = sun_num/ len(num)
-    return avg
 
-nombreEtudiants = int(input("Donnez le nombre d'etudiants : "))
-moyenne = 0.0
+def cal_average(num):
+    sum_num = 0
+    for t in num:
+        sum_num = sum_num + t
+
+    avg = sum_num / len(num)
+    return avg
+nombreEtudiants = int(input("Donnez le nombre d'étudiants"))
+moyenne = 0.0;
 notes = []
 i = 0
+nb = 0
+
+
+while nb < nombreEtudiants:
+
+    nb = nb + 1
+    notes_test = int(input(F'Note etudiant {nb}: '))
+    if not (notes_test <= 20 and notes_test >=0):
+        while notes_test > 20 or notes_test <0:
+            print("Retapez un nombre")
+            notes_test = int(input(F'Note etudiant {nb}: '))
+    notes.append(notes_test)
+
 
 for i in range(nombreEtudiants) :
-    i = i +1
-    note_test = float(input(F"La note de l'étudiant est {i} : "))
-    notes.append(note_test)
 
-print("la moyenne est de :", cal_average(notes))
+    i = i + 1
+
+print("La moyenne de classe est :", cal_average(notes))
 print("\n")
-print ("Num de l'étudiant | note | ecart")
-
+print('Num étudiant | note | ecart de la moyenne de la classe')
+i = 0
 for i in range(nombreEtudiants) :
-    print(F'{i} | {notes[i]} | {round(cal_average(notes) - notes[i], 2)}')
-    i = i +1
+
+    print(F'{i} | {notes[i]} | {round(cal_average(notes) - notes[i], 2)} ')
+    i = i + 1
