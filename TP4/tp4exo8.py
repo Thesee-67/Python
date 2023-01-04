@@ -1,6 +1,6 @@
 dico = {
-    "firstname": "Maxime",
-    "name": "BRODIN",
+    "firstname": "Olivier",
+    "name": "Guittet",
     "promo": 2022,
     "group": "RT111"
 }
@@ -11,16 +11,16 @@ print(f"Votre nom est {dico['name']}, prénom est {dico['firstname']}, "
 # partie 2
 dic = {
     "name": "toto",
-    "firstname": "titi",
+    "firstname": "tata",
     "promo": 2022,
     "group": 202
 }
 
-print("Les clés du dictionnaire sont :")
+print("Les clés sont :")
 for i in dic.keys():
     print(f"-{i}")
 
-print("Les valeurs du dictionnaire sont :")
+print("Les valeurs sont :")
 for i in dic.values():
     print(f"-{i}")
 
