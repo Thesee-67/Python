@@ -9,7 +9,7 @@ print(f"Votre nom est {dico['name']}, prénom est {dico['firstname']}, " f"vous 
 
 dic = {
     "name": "toto",
-    "firstname": "tata",
+    "firstname": "titi",
     "promotion": 2022,
     "groupe": 202
 }
