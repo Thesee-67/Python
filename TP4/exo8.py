@@ -24,11 +24,10 @@ print("Les valeurs sont :")
 for i in dic.values():
     print(f"-{i}")
 
-print("Les tuplets du dictionnaire sont :")
+print("Les tuplets sont :")
 for i in dic.items():
     print(f"-{i}")
 
-# partie 3
 binome = {
     1: dico,
     2: dic
