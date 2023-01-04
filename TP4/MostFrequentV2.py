@@ -1,10 +1,10 @@
 L1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 6, 7, 6]
-occurence = 0
-num = L1[0]
+o = 0
+nombre = L1[0]
 for i in L1:
     x = L1.count(i)
-    if x > occurence:
-        occurence = x
-        num = i
-print("Le nombre le plus frequent dans la liste est le",num,"et il apparaît",x,"fois.")
+    if x > o:
+        o = x
+        nombre = i
+print("Le nombre le plus frequent dans la liste est le",nombre,"et il apparaît",x,"fois.")
 

@@ -1,19 +1,17 @@
 dico = {
     "firstname": "Olivier",
     "name": "Guittet",
-    "promo": 2022,
-    "group": "RT111"
+    "promotion": 2022,
+    "groupe": "RT111"
 }
 
-print(f"Votre nom est {dico['name']}, prénom est {dico['firstname']}, "
-      f"vous faites partie de la promo {dico['promo']} et votre groupe est {dico['group']}")
+print(f"Votre nom est {dico['name']}, prénom est {dico['firstname']}, " f"vous faites partie de la promotion {dico['promotion']} et votre groupe est {dico['groupe']}")
 
-# partie 2
 dic = {
     "name": "toto",
     "firstname": "tata",
-    "promo": 2022,
-    "group": 202
+    "promotion": 2022,
+    "groupe": 202
 }
 
 print("Les clés sont :")
@@ -33,6 +31,6 @@ binome = {
     2: dic
 }
 
-print("Les étudiants formants le binôme sont :")
+print("Les étudiants formants le binôme sont: ")
 for i in binome.values():
-    print(f"- L'étudiant {i['name']} {i['firstname']} du groupe {i['group']}")
+    print(f"L'étudiant {i['name']} {i['firstname']} du groupe {i['groupe']}")
