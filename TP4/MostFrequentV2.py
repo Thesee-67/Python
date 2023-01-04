@@ -6,5 +6,5 @@ for i in L1:
     if x > o:
         o = x
         nombre = i
-print("Le nombre le plus frequent dans la liste est le",nombre,"et il apparaît",x,"fois.")
+print("Le nombre le plus frequent dans la liste est le",nombre,"(",x,"x).")
 

@@ -6,8 +6,8 @@ def cal_average(num):
 
     avg = sum_num / len(num)
     return avg
-nombreEtudiants = int(input("Donnez le nombre d'étudiants"))
-moyenne = 0.0;
+nombreEtudiants = int(input("Donnez le nombre d'étudiants:"))
+moyenne = 0.0
 notes = []
 i = 0
 nb = 0
