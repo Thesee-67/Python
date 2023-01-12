@@ -7,52 +7,44 @@ valeur4 = str(input("Veuillez entrer la note du moudule 4 et le coefficient corr
 valeur5 = str(input("Veuillez entrer la note du moudule 5 et le coefficient correpondant:"))
 
 s2 = valeur1.split(" ")
-s3 = s2[0]
-s4 = s2[1]
+s3 = int(s2[0])
+s4 = int(s2[1])
 
 s5 = valeur2.split(" ")
-s6 = s5[0]
-s7 = s5[1]
+s6 = int(s5[0])
+s7 = int(s5[1])
 
 s8 = valeur3.split(" ")
-s9 = s8[0]
-s10 = s8[1]
+s9 = int(s8[0])
+s10 = int(s8[1])
 
 s11 = valeur4.split(" ")
-s12 = s11[0]
-s13 = s11[1]
+s12 = int(s11[0])
+s13 = int(s11[1])
 
 s14 = valeur5.split(" ")
-s15 = s14[0]
-s16 = s14[1]
+s15 = int(s14[0])
+s16 = int(s14[1])
 
-print(valeur1)
-print(s3)
-print(s4)
+print("La note du module 1 de l'étudiant est de:",s3,"et le coeffciant du module est de:",s4)
 
-print(valeur2)
-print(s6)
-print(s7)
+print("La note du module 1 de l'étudiant est de:",s6,"et le coeffciant du module est de:",s7)
 
-print(valeur3)
-print(s9)
-print(s10)
+print("La note du module 1 de l'étudiant est de:",s9,"et le coeffciant du module est de:",s10)
 
-print(valeur4)
-print(s12)
-print(s13)
+print("La note du module 1 de l'étudiant est de:",s12,"et le coeffciant du module est de:",s13)
 
-print(valeur5)
-print(s15)
-print(s16)
+print("La note du module 1 de l'étudiant est de:",s15,"et le coeffciant du module est de:",s16)
 
-v5 = (s15*s16)
-v4 = (s12*s13)
-v3 = (s9*s10)
-v2 = (s6*s7)
-v1 = (s3*s4)
+x = ((s3*s4) + (s6*s7) + (s9*s10) + (s12*s13) + (s15*s16))/(s4 + s7 + s10 + s13 + s16)
+print("la moyenne est de l'étudiant est de:", x)
 
-x = (v1 + v2 + v3 + v4 + v5)/5
-print(x)
+if x >= 10 and s3 > 8 and s6 > 8 and s9 > 8 and s12 > 8 and s15 > 8:
+    print("l'étudiant est admis")
+else:
+    print("l'étudiant n'est pas admis")
+
+
+
 
 
