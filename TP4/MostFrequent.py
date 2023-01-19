@@ -4,7 +4,7 @@ L2 = L1
 * Completez le programme a partir d'ici.
 ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** * /
 """
-o = 0
+y = 0
 x = 0
 for i in L1:
     nombre = i
@@ -12,10 +12,10 @@ for i in L1:
     for i in L2:
         if nombre == L2[i]:
             x += 1
-        if x > o:
-            o = x
-            n2 = i
-print("Le nombre le plus frequent dans la liste est le",n2,o,"x.")
+        if x > y:
+            y = x
+            a = i
+print("Le nombre le plus frequent est ",a,y,"x.")
 """
 ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** *
 * Ne rien modifier apres cette ligne.
