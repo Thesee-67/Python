@@ -7,3 +7,5 @@ def ajouter_elt(lst=[0,1,2], elt=3):
 print(ajouter_elt())
 #il affiche la liste lst c'est a dire 0,1,2 et le nombre de valeur dans cette liste.
 
+print(ajouter_elt())
+#on remarque que le 3 apparait 2 fois a la fin de la liste contrairement a avant ou il apparait qu'une seule fois.
